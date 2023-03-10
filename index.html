@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website com Login & Registro | RussoDev</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h2 class="logo">Russo Dev</h2>
+    <nav class="navigation">
+      <a href="#">Inicio</a>
+      <a href="#">Sobre</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+      <button class="btnLogin-popup">Login</button>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <div class="form-box Login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="mail"></ion-icon>
+          </span>
+          <input type="email" required>
+          <label for="email">E-mail</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="lock-closed"></ion-icon>
+          </span>
+          <input type="password" required>
+          <label for="password">Senha</label>
+        </div>
+        <div class="remember-forgot">
+          <label>
+            <input type="checkbox">
+            Me Lembrar
+          </label>
+          <a href="#">Esqueceu a senha?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="login-register">
+          <p>Você não tem uma conta?
+            <a href="#" class="register-link">Cadastro</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+  <!-- Aqui é a instalação do site ionicons para poder pegar da nuvem os ícones -->
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Fim da instalação do ionicons -->
+
+</body>
+
+</html>
