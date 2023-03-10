@@ -113,29 +113,6 @@ header {
   align-items: center;
 }
 
-/* Configurando o botão de login dentro do box de login */
-.btnLogin-form
-{
-width: 100%;
-height: 50px;
-border: none;
-outline: none;
-background: #162938;
-color: #fff;
-font-size: 1.2em;
-font-weight: 500;
-border-radius: 25px;
-cursor: pointer;
-transition: .5s;
-margin-top: 30px;
-}
-
-/* Configurando o efeito hover para o botão de login dentro do box de login */
-.btnLogin-form:hover
-{
-background: rgba(0, 0, 0, .8);
-}
-
 /* Configurando a mensagem de erro */
 .errorMessage
 {
@@ -203,3 +180,77 @@ text-align: center;
     color: #162938;
     line-height: 57px;
 }
+
+/* Configurando parte de esqueceu a senha */
+.remember-forgot
+{
+  font-size: .9em;
+  color: #162938;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input
+{
+  accent-color: #162938;
+  margin-right: 3px;
+}
+
+.remember-forgot a
+{
+  color: #162938;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover
+{
+  text-decoration: underline;
+}
+
+
+/* Configurando o botão de login dentro do box de login */
+.btn 
+{
+width: 100%; /* aumenta a largura do elemento */
+height: 45%; /* aumenta a altura do elemento */
+background: #162938;
+border: none;
+outline: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 1.2em; /* aumenta o tamanho da fonte */
+color: white;
+font-weight: 500;
+transition: .5s;
+transform: scale(100%); /* aumenta o tamanho do elemento*/
+}
+
+/* Configurando o efeito hover para o botão de login do box */
+.btn:hover {
+  background-color: #fdfdfd;
+  color: #162938;
+}
+
+.login-register /* registre-se*/
+{
+  font-size: .9em; /* aumenta o tamanho da fonte */
+  color: #162938;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a 
+{
+  color: #162938;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register p a:hover /* coloca a linha ao passar o mouse */
+{
+  text-decoration: underline;
+}
+
