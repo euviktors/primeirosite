@@ -22,41 +22,89 @@
   </header>
 
   <div class="wrapper">
-    <div class="form-box Login">
-      <h2>Login</h2>
-      <form action="#">
-        <div class="input-box">
-          <span class="icon">
-            <ion-icon name="mail"></ion-icon>
-          </span>
-          <input type="email" required>
-          <label for="email">E-mail</label>
-        </div>
-        <div class="input-box">
-          <span class="icon">
-            <ion-icon name="lock-closed"></ion-icon>
-          </span>
-          <input type="password" required>
-          <label for="password">Senha</label>
-        </div>
-        <div class="remember-forgot">
-          <label>
-            <input type="checkbox">
-            Me Lembrar
-          </label>
-          <a href="#">Esqueceu a senha?</a>
-        </div>
-        <button type="submit" class="btn">Login</button>
-        <div class="login-register">
-          <p>Você não tem uma conta?
-            <a href="#" class="register-link">Cadastro</a>
-          </p>
-        </div>
-      </form>
+    <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+
+    <!-- Pop-up de login -->
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required>
+                <label for="email">E-mail</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required>
+                <label for="password">Senha</label>
+            </div>
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    Me Lembrar
+                </label>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+                <p>Você não tem uma conta?
+                    <!-- Link para abrir o pop-up de registro -->
+                    <a href="#" class="register-link">Cadastre-se</a>
+                </p>
+            </div>
+        </form>
     </div>
-  </div>
 
+    <!-- Pop-up de registro -->
+    <div class="form-box register">
+        <h2>Registre-se</h2><!-- faltava um '<' -->
+        <form action="#">
+            <div class="input-box"><!-- usuário -->
+                <span class="icon">
+                    <ion-icon name="person"></ion-icon>
+                </span>
+                <input type="text" required>
+                <label for="username">Usuário</label><!-- o 'for' deve se referir ao 'id' do input, não ao seu tipo -->
+            </div>
 
+            <div class="input-box"><!-- email -->
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required>
+                <label for="email">E-mail</label>
+            </div>
+
+            <div class="input-box"><!-- senha -->
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required>
+                <label for="password">Senha</label>
+            </div>
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    Aceito os termos & Condições.
+                </label>
+                <a href="#"></a>
+            </div>
+            <button type="submit" class="btn">Registrar</button><!-- mudar o texto do botão para "Registrar" -->
+            <div class="login-register">
+                <p>Já tem uma conta?
+                    <!-- Link para abrir o pop-up de login -->
+                    <a href="#" class="login-link">Entrar</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+</div>
 
 
   <!-- Aqui é a instalação do site ionicons para poder pegar da nuvem os ícones -->
